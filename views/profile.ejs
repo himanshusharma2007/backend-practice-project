@@ -11,11 +11,19 @@
     <div class="container mx-auto px-4 py-8 max-w-6xl">
       <header class="flex justify-between items-center mb-12">
         <h1 class="text-4xl font-bold">Hello, <%= user.userName %></h1>
-        <a href="/logout">
-          <button class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-lg transition duration-300 ease-in-out">
-            Log out
-          </button>
-        </a>
+        <div class="wraper flex space-x-3 items-center">
+
+          <a href="/feed">
+           <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-lg transition duration-300 ease-in-out">
+             Feed
+           </button>
+         </a>
+         <a href="/logout">
+           <button class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-lg transition duration-300 ease-in-out">
+             Log out
+           </button>
+         </a>
+        </div>
       </header>
 
       <div class="flex flex-col lg:flex-row gap-12">

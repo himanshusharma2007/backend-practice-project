@@ -144,7 +144,7 @@ app.post("/create", (req, res) => {
       });
       var token = jwt.sign({ email, id: user._id }, "shhhhhhh");
       res.cookie("token", token, { httpOnly: true });
-      res.send("User created successfully");
+      res.redirect("/profile");
     });
   });
 });

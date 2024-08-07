@@ -9,7 +9,22 @@
   </head>
   <body class="bg-gray-900 text-gray-100 font-['Inter']">
     <div class="container mx-auto px-4 py-8 max-w-6xl">
-      <h1 class="text-3xl font-bold mb-8">All Posts</h1>
+       <header class="flex justify-between items-center mb-12">
+        <h1 class="text-4xl font-bold">All Posts</h1>
+        <div class="wraper flex space-x-3 items-center">
+
+          <a href="/profile">
+           <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full text-lg transition duration-300 ease-in-out">
+             Profile
+           </button>
+         </a>
+         <a href="/logout">
+           <button class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full text-lg transition duration-300 ease-in-out">
+             Log out
+           </button>
+         </a>
+        </div>
+      </header>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <% posts.forEach((post) => { %>
           <div class="bg-gray-800 rounded-lg p-6 shadow-lg">
